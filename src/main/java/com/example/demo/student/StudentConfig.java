@@ -18,14 +18,12 @@ import java.util.List;
                 Student mariam = new Student(
                         "Mariam",
                         "mariam@gmail.com",
-                        LocalDate.of(2000, Month.JANUARY,5),
-                        21
+                        LocalDate.of(2000, Month.JANUARY,5)
                 );
                 Student alex = new Student(
                         "Alex",
                         "alex@gmail.com",
-                        LocalDate.of(2011, Month.JANUARY,5),
-                        24
+                        LocalDate.of(2011, Month.JANUARY,5)
                 );
                 repository.saveAll(List.of(mariam, alex));
             };
