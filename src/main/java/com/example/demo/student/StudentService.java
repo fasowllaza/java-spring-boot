@@ -1,12 +1,9 @@
 package com.example.demo.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -22,6 +19,11 @@ public class StudentService {
 
     public List<Student> getStudents(){
         return studentRepository.findAll();
+    }
+
+    public Optional<Student> getStudentById(Long studentId) {
+        Optional<Student> student = studentRepository.findById(studentId);
+        return student;
     }
 
     public void addNewStudent(Student student) {
@@ -54,4 +56,6 @@ public class StudentService {
             student.setEmail(email);
         }
     }
+
+
 }
