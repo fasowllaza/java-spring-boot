@@ -7,6 +7,41 @@ with CRUD function
 ```
 /api/v1/student
 ```
+__Response 200__
+```
+[
+    {
+        "id": 1,
+        "name": "Mariam",
+        "email": "mariam@gmail.com",
+        "dob": "2000-01-05",
+        "age": 21
+    },
+    {
+        "id": 2,
+        "name": "Alex",
+        "email": "alex@gmail.com",
+        "dob": "2011-01-05",
+        "age": 10
+    }
+]
+```
+
+##GET BY ID
+```
+/api/v1/student/id
+```
+__Response 200__
+```
+    {
+        "id": 1,
+        "name": "Mariam",
+        "email": "mariam@gmail.com",
+        "dob": "2000-01-05",
+        "age": 21
+    }
+```
+
 ##Post
 ```
 /api/v1/student
